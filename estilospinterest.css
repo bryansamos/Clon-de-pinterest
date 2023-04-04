@@ -1,0 +1,192 @@
+body {
+   overflow-x: hidden; /* esconder la barra de navegacion horizontal */
+}
+
+header {                  /* tamaño del header */
+    width: 100%;
+    height: 80px;
+    padding: 4px 16px;
+}
+
+header nav {                    /*tamaño de nav y acomodo */
+    display: flex;
+    height: 56px;
+    justify-content: center ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    position: fixed;      /* linea para que la barra de navegacion quede estatica */
+    top: 0; 
+    z-index: 1000;                /* linea para que la barra quede al frente */
+    background-color: white;
+    
+    
+}
+
+
+
+header nav #navbar-pinterest {   /* acomodo de elementos */
+    display: flex;
+    align-items: center;
+   
+    list-style: none;
+   
+}
+
+#navbar-pinterest img {  /* tamaño de las imagenes y separacion entre ellas */
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+
+#navbar-pinterest img:hover {   /* cambio de color cuando pasas el cursor sobre un elemento */
+    background-color: #e9e9e9;
+
+}
+
+ #navbar-pinterest .finder-contenedor { /* tamaño del contenedor del buscador*/
+    width: 700px;
+    height: 50px;
+    border-radius: 100px; 
+    background-color:  #e9e9e9;
+    display: flex;
+}
+#navbar-pinterest input {   /* estilo de la caja de texto del buscador */
+    border: none;
+    outline: none;
+    background-color: #e9e9e9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    color: black;
+    width: 600px;
+}
+#navbar-pinterest .inicio {
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 100px;
+}
+.inicio a:link {
+    text-decoration: none;
+    color: white;
+}
+.inicio a:visited {
+    color: white;                         /*el elemento despues de que se le de click */
+    text-decoration: none;
+    
+}
+.inicio a:hover {
+    color: white;                        /* el elemento con el cursor encima */
+    text-decoration: none;
+}
+.inicio a:active { 
+    color: white;                         /* el elemento mientras se le da click */
+    text-decoration: none;
+}
+#navbar-pinterest .blanco {
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 100px;
+}
+.blanco a:link {
+    text-decoration: none;
+    color: black;
+}
+.blanco a:visited {
+    color: black;                       
+    text-decoration: none;
+    
+}
+.blanco a:hover {
+     color: black;                      
+    text-decoration: none;
+}
+.blanco a:active { 
+    color: black;                         
+    text-decoration: none;
+}
+
+#content {
+    columns: 5 320px;
+    column-gap: 8px;
+}
+
+.card-image {
+    position:relative;
+}  
+
+
+.card-image img {
+    max-width: 100%;
+    margin-bottom: 8px;
+    display: block;
+    border-radius: 25px;
+}
+
+.card-image .botonrojo {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.card-image .botoncompartir {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    right: 13%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+   /* padding: 10px 10px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; 
+
+} 
+.botoncompartir img {
+    width: 24x;
+    height: 24px;
+    background-color: white;
+}
+.card-image .boton3puntos {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+   /* padding: 10px 10px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+.boton3puntos img {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+}
+
+.card-image:hover  .botonrojo {
+    display: block;
+}
+.card-image:hover  .botoncompartir {
+    display: block;
+}
+.card-image:hover  .boton3puntos {
+    display: block;
+}
+.card-image:hover img {
+    opacity: .5;
+}
+
+
